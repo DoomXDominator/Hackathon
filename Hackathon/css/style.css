@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    display: flex;
+    
+    cursor: pointer;
+}
+
+.background{
+    background: rgba(86, 126, 227, 0.8) url('../img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: hue;
+}
+
+.nav_list{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.nav_list li{
+    font-size: 20px;
+    list-style: none;
+    align-self: center;
+    padding: 25px 33px;
+}
+
+.nav_list li a{
+    color: #cdf432;
+    text-decoration: none;
+}
+
+.nav_list li a:hover{
+    color: brown;
+}
+
+.register{
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.register button{
+    padding: 0 23px;
+}
+
+.logo{
+    display: flex;
+    width: 10%;  
+}
+
+.logo img{
+    border: solid white;
+    border-radius: 80px;
+    width: 70px;
+    height: 70px;
+}
+
+.firstSection{
+    height: 100vh;
+}
+
+.textBig {
+    font-size: 25px;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+.box_main{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 70%;
+    margin: auto;
+    height: 80%;
+    
+}
+
+.firstHalf{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+}
+
+.seacondHalf{
+    display: flex;
+    width: 30%;
+}
+
+.seacondHalf img{
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+
+.btn{
+    padding: 8px 20px; 
+    width: 30%;
+    margin: 7px;
+    border: 2px solid white; 
+    border-radius: 8px; 
+    background: none;
+    color: brown;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.rules{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+    flex-direction: column;
+    padding: 0 80px;
+}
+.start{
+    font-size: 25px;
+}
+
+.perks{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+    flex-direction: column;
+    padding: 0 80px;
+}
+
+.meet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start1{
+    font-size: 25px;
+    justify-content: center;
+    display: flex;
+}
+
+.team{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
+.card{
+    background-color: rgb(255, 255, 255);
+    width: 220px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.card-img{
+    background-color: rgb(15, 136, 211);
+    height: 190px;
+    margin-bottom: 20px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+
+
+.deva{
+    background-image: url('https://www.kindpng.com/picc/m/746-7461236_gautam-buddha-university-logo-png-transparent-png.png');
+}
+
+.rite{
+    background-image: url('https://www.kindpng.com/picc/m/746-7461236_gautam-buddha-university-logo-png-transparent-png.png');
+}
+
+.card:hover{
+    background-color: rgb(62,62,62);
+    color:white;
+    cursor:pointer;
+    transform: scale(1.05);
+    transition: all .4s ease;
+}
+
+.contact{
+    background-color: rgb(225, 231, 229);
+    height: 60vh;
+    padding: 25px;
+    font-family: 'Ubantu',sans-serif;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.form{
+    max-width: 344px;
+    margin: auto;
+}
+
+.form input{
+    margin: 14px 0;
+    width: 100%;
+    border: 2px solid grey;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+
+.btn-dark{
+    color: black;
+    border: 2px solid black;
+    width: 100%;
+}
+
+
+.text-footer{
+    font-size: 12px;
+    padding: 30px 0px;
+    text-align: center;
+    font-family: 'Ubantu',sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media only screen and (max-width: 1140px){
+    .nav_list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+}
